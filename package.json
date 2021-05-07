@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "author": "Yarnball",
   "license": "MIT",
+  "scripts": {
+    "server": "cd packages/server-1 && npm run dev & cd packages/server-main && npm start "
+  },
   "workspaces": [
     "./packages/*"
   ]

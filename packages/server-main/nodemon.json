@@ -1,0 +1,4 @@
+{
+  "watch": ["../server-1/build"],
+  "ext": "js, css"
+}

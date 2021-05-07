@@ -1,4 +1,4 @@
 export default (router) => {
-	router.get('/test', (req, res)=> res.send({success:'server-1'}))
+	router.get('/test', (req, res)=> res.send({success:'server'}))
 	return router
 }
