@@ -2,12 +2,13 @@ import http from 'http'
 
 import express from 'express'
 
-// import server1 from 'server-1'
+import server1 from 'server-1'
+
 const PORT = 8080
 const app = express()
-var router = express.Router()
+const router = express.Router()
 
-// app.use('/server1', router => server1(router))
+app.use('/server1', server1(router))
 
 app.get('*', (req, res) =>res.status(200).send('Express server running'))
 

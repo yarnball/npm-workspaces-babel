@@ -5,14 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _foo = _interopRequireDefault(require("./foo"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-console.log('Nodejs running');
-
-var _default = function _default() {
-  return 'Hello';
+var _default = function _default(router) {
+  router.get('/test', function (req, res) {
+    return res.send({
+      success: 'server-1'
+    });
+  });
+  return router;
 };
 
 exports["default"] = _default;
