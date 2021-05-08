@@ -8,7 +8,7 @@ const PORT = 8080
 const app = express()
 const router = express.Router()
 
-app.use('/server1', server1(router))
+app.use('/server-1', server1(router))
 
 app.get('*', (req, res) =>res.status(200).send('Express server running'))
 
