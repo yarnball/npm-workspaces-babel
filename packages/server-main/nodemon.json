@@ -1,5 +1,5 @@
 {
-  "watch": ["./src","../server-1/build"],
+  "watch": ["./src","../**/*build*/*"],
   "quiet": true,
   "ext": "js, css"
 }
